@@ -2,31 +2,31 @@
 // Contributors: Cody Lamens, Philip Ikpeiwunna, Dayo Akins, Faith Ruth, Emmanuel Ademola, Nia Ikpeiwunna 
 
 // Importing necessary components from React and React Native
-import React from &amp;#039;react&amp;#039;;
-import { View, Text, Image, StyleSheet } from &amp;#039;react-native&amp;#039;;
+import React from \'react\';
+import { View, Text, Image, StyleSheet } from \'react-native\';
 
 // Component: MovieCard1 
 // This component is a functional component that displays a MovieCard1 
-const MovieCard1 = ({  }) =&amp;gt; {
-  // Component&amp;#039;s return statement with JSX 
+const MovieCard1 = ({  }) => {
+  // Component\'s return statement with JSX 
   return (
-    &amp;lt;View style={styles.textContainer}&amp;gt;
-      &amp;lt;Text style={styles.title}&amp;gt;Spiderman: Far From Home&amp;lt;/Text&amp;gt;
-      &amp;lt;Text style={styles.subtitle}&amp;gt;Action/Adventure • 2h 9m&amp;lt;/Text&amp;gt;
-      &amp;lt;View style={styles.ratingContainer}&amp;gt;
-        &amp;lt;Text style={styles.rating}&amp;gt;⭐ 5.4 Stars&amp;lt;/Text&amp;gt;
-      &amp;lt;/View&amp;gt;
-    &amp;lt;/View&amp;gt;
+    <View style={styles.textContainer}>
+      <Text style={styles.title}>Spiderman: Far From Home</Text>
+      <Text style={styles.subtitle}>Action/Adventure • 2h 9m</Text>
+      <View style={styles.ratingContainer}>
+        <Text style={styles.rating}>⭐ 5.4 Stars</Text>
+      </View>
+    </View>
   );
 };
 
 // StyleSheet for styling the components 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: &amp;#039;#fff&amp;#039;,
+    backgroundColor: \'#fff\',
     borderRadius: 8,
-    overflow: &amp;#039;hidden&amp;#039;,
-    shadowColor: &amp;#039;#000&amp;#039;,
+    overflow: \'hidden\',
+    shadowColor: \'#000\',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -35,35 +35,35 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
     /* Additional properties */
-    test: &amp;#039;test&amp;#039;,
+    test: \'test\',
   },
   image: {
-    width: &amp;#039;100%&amp;#039;,
+    width: \'100%\',
     height: 200,
     // Set this value to maintain aspect ratio of the image
-    resizeMode: &amp;#039;cover&amp;#039;,
+    resizeMode: \'cover\',
   },
   textContainer: {
     padding: 16,
   },
   title: {
     fontSize: 20,
-    fontWeight: &amp;#039;bold&amp;#039;,
+    fontWeight: \'bold\',
     marginBottom: 4,
   },
   subtitle: {
     fontSize: 14,
-    color: &amp;#039;#666&amp;#039;,
+    color: \'#666\',
     marginBottom: 8,
   },
   ratingContainer: {
-    flexDirection: &amp;#039;row&amp;#039;,
-    alignItems: &amp;#039;center&amp;#039;,
+    flexDirection: \'row\',
+    alignItems: \'center\',
   },
   rating: {
     fontSize: 14,
-    color: &amp;#039;#ffc107&amp;#039;,
-    // You can adjust the color to match the star&amp;#039;s color
+    color: \'#ffc107\',
+    // You can adjust the color to match the star\'s color
   },
 });
 
