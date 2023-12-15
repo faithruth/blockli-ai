@@ -2,31 +2,31 @@
 // Contributors: admin, Philip Ikpeiwunna, Dayo Akins, Faith Ruth, Emmanuel Ademola, Nia Ikpeiwunna. For permissions to use this code, contact the author admin via email: dev-email@wpengine.local
 // Importing necessary components from React and React Native
 
-import React from &#039;react&#039;;
-import { View, Text, Image, StyleSheet } from &#039;react-native&#039;;
+import React from 'react';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 // Component: MovieCard1
 // This component is a functional component that displays a MovieCard1
-const MovieCard1 = ({ TITLE }) =&gt; {
-// Component&#039;s return statement with JSX 
+const MovieCard1 = ({ TITLE }) => {
+// Component's return statement with JSX 
   return (
-    &lt;View style={styles.textContainer}&gt;
-        &lt;Text style={styles.title}&gt;{TITLE || &#039;Post Title&#039;}&lt;/Text&gt;
-        &lt;Text style={styles.subtitle}&gt;Action/Adventure • 2h 9m&lt;/Text&gt;
-        &lt;View style={styles.ratingContainer}&gt;
-          &lt;Text style={styles.rating}&gt;⭐ 5.4 Stars&lt;/Text&gt;
-        &lt;/View&gt;
-      &lt;/View&gt;
+    <View style={styles.textContainer}>
+        <Text style={styles.title}>{TITLE || 'Post Title'}</Text>
+        <Text style={styles.subtitle}>Action/Adventure • 2h 9m</Text>
+        <View style={styles.ratingContainer}>
+          <Text style={styles.rating}>⭐ 5.4 Stars</Text>
+        </View>
+      </View>
   );
 };
 
 // StyleSheet for styling the components 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: &#039;#fff&#039;,
+    backgroundColor: '#fff',
     borderRadius: 8,
-    overflow: &#039;hidden&#039;,
-    shadowColor: &#039;#000&#039;,
+    overflow: 'hidden',
+    shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
@@ -35,33 +35,33 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
     /* Additional properties */
-    test: &#039;test&#039;,
+    test: 'test',
   },
   image: {
-    width: &#039;100%&#039;,
+    width: '100%',
     height: 200, // Set this value to maintain aspect ratio of the image
-    resizeMode: &#039;cover&#039;,
+    resizeMode: 'cover',
   },
   textContainer: {
     padding: 16,
   },
   title: {
     fontSize: 20,
-    fontWeight: &#039;bold&#039;,
+    fontWeight: 'bold',
     marginBottom: 4,
   },
   subtitle: {
     fontSize: 14,
-    color: &#039;#666&#039;,
+    color: '#666',
     marginBottom: 8,
   },
   ratingContainer: {
-    flexDirection: &#039;row&#039;,
-    alignItems: &#039;center&#039;,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   rating: {
     fontSize: 14,
-    color: &#039;#ffc107&#039;, // You can adjust the color to match the star&#039;s color
+    color: '#ffc107', // You can adjust the color to match the star's color
   },
 });
 
