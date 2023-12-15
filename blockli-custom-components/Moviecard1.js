@@ -10,13 +10,13 @@ import { View, Text, Image, StyleSheet } from \'react-native\';
 const MovieCard1 = ({  }) => {
   // Component\'s return statement with JSX 
   return (
-    <View style={styles.textContainer}>
-      <Text style={styles.title}>Spiderman: Far From Home</Text>
-      <Text style={styles.subtitle}>Action/Adventure • 2h 9m</Text>
-      <View style={styles.ratingContainer}>
-        <Text style={styles.rating}>⭐ 5.4 Stars</Text>
-      </View>
-    </View>
+    
+      Spiderman: Far From Home
+      Action/Adventure • 2h 9m
+      
+        ⭐ 5.4 Stars
+      
+    
   );
 };
 
