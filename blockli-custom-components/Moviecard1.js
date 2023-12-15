@@ -1,32 +1,32 @@
 // Made with Blockli AI for BuddyBoss App
-// Contributors: Cody Lamens, Philip Ikpeiwunna, Dayo Akins, Faith Ruth, Emmanuel Ademola, Nia Ikpeiwunna 
-
+// Contributors: admin, Philip Ikpeiwunna, Dayo Akins, Faith Ruth, Emmanuel Ademola, Nia Ikpeiwunna. For permissions to use this code, contact the author admin via email: dev-email@wpengine.local
 // Importing necessary components from React and React Native
-import React from \'react\';
-import { View, Text, Image, StyleSheet } from \'react-native\';
 
-// Component: MovieCard1 
-// This component is a functional component that displays a MovieCard1 
-const MovieCard1 = ({  }) => {
-  // Component\'s return statement with JSX 
+import React from &#039;react&#039;;
+import { View, Text, Image, StyleSheet } from &#039;react-native&#039;;
+
+// Component: MovieCard1
+// This component is a functional component that displays a MovieCard1
+const MovieCard1 = ({ TITLE }) =&gt; {
+// Component&#039;s return statement with JSX 
   return (
-    
-      Spiderman: Far From Home
-      Action/Adventure • 2h 9m
-      
-        ⭐ 5.4 Stars
-      
-    
+    &lt;View style={styles.textContainer}&gt;
+        &lt;Text style={styles.title}&gt;{TITLE || &#039;Post Title&#039;}&lt;/Text&gt;
+        &lt;Text style={styles.subtitle}&gt;Action/Adventure • 2h 9m&lt;/Text&gt;
+        &lt;View style={styles.ratingContainer}&gt;
+          &lt;Text style={styles.rating}&gt;⭐ 5.4 Stars&lt;/Text&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;
   );
 };
 
 // StyleSheet for styling the components 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: \'#fff\',
+    backgroundColor: &#039;#fff&#039;,
     borderRadius: 8,
-    overflow: \'hidden\',
-    shadowColor: \'#000\',
+    overflow: &#039;hidden&#039;,
+    shadowColor: &#039;#000&#039;,
     shadowOffset: {
       width: 0,
       height: 2,
@@ -35,35 +35,33 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
     /* Additional properties */
-    test: \'test\',
+    test: &#039;test&#039;,
   },
   image: {
-    width: \'100%\',
-    height: 200,
-    // Set this value to maintain aspect ratio of the image
-    resizeMode: \'cover\',
+    width: &#039;100%&#039;,
+    height: 200, // Set this value to maintain aspect ratio of the image
+    resizeMode: &#039;cover&#039;,
   },
   textContainer: {
     padding: 16,
   },
   title: {
     fontSize: 20,
-    fontWeight: \'bold\',
+    fontWeight: &#039;bold&#039;,
     marginBottom: 4,
   },
   subtitle: {
     fontSize: 14,
-    color: \'#666\',
+    color: &#039;#666&#039;,
     marginBottom: 8,
   },
   ratingContainer: {
-    flexDirection: \'row\',
-    alignItems: \'center\',
+    flexDirection: &#039;row&#039;,
+    alignItems: &#039;center&#039;,
   },
   rating: {
     fontSize: 14,
-    color: \'#ffc107\',
-    // You can adjust the color to match the star\'s color
+    color: &#039;#ffc107&#039;, // You can adjust the color to match the star&#039;s color
   },
 });
 
