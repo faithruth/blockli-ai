@@ -8,12 +8,12 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 
 // Component: TestCard
 // This component is a functional component that displays a TestCard
-const TestCard = ({ IMAGE_URL_1 }) => {
+const TestCard = ({ CUSTOM_FIELD_1 }) => {
 // Component's return statement with JSX 
   return (
     <View style={styles.cardContainer}>
       <View style={styles.card}>
-        <Image source=IMAGE_URL_1 style={styles.cardImage} />
+        <Image source={CUSTOM_FIELD_1 || 'No Custom Field 1'} style={styles.cardImage} />
         {/* Additional content would go here. 
             Assuming the screenshot had details like title, genre, duration, and rating, 
             but since we're only focusing on the main image element as per your instruction, 
