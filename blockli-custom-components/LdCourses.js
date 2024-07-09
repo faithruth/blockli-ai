@@ -77,8 +77,8 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   alexSihotang: {
-    fontSize: 14,
-    lineHeight: 20,
+    fontSize: 16,
+    lineHeight: 24,
     color: '#e6e9ed',
     position: 'absolute',
     bottom: 20, // Adjusted to align with padding inside the overlay
